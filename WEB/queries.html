@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queries</title>
+    <style>
+        section {
+            min-height: 100vh;
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .faq {
+            max-width: 700px;
+            margin-top: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #fff;
+            cursor: pointer;
+        }
+        
+        .ques {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .ques h4 {
+            font-size: 1.0rem;
+        }
+        
+        .ans {
+            max-height: 0px;
+            overflow: hidden;
+            transition: max-height 1.4s ease;
+        }
+        
+        .ans p {
+            padding-top: 1rem;
+            line-height: 1.6;
+            font-size: 1.4rem;
+        }
+        
+        .faq.active .ans {
+            max-height: 300px;
+        }
+        
+        .faq.active svg {
+            transform: rotate(180deg);
+        }
+        
+        svg {
+            transition: transform .5s ease-in;
+        }
+        
+        @keyframes fade {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h2 class="title">Frequently Asked Queries</h2>
+        <div class="faq">
+            <div class="ques">
+                <h4>What is Stream Saviour?</h4>
+                <svg width="15" height="10" viewbox="0 0 42 25">
+                <path 
+                d="M3 3L21 21L39 3"
+                stroke="white"
+                stroke-width="7"
+                stroke-linecape="round"
+                />
+            </svg>
+            </div>
+            <div class="ans">
+                Response: "Stream Saviour is a web interface designed to calculate the Water Quality Index (WQI) of streams and rivers. It analyzes various parameters to assess the overall health of water bodies."
+            </div>
+        </div>
+        <br><br>
+        <div class="faq">
+            <div class="ques">
+                <h4>How does Stream Saviour calculate WQI?</h4>
+                <svg width="15" height="10" viewbox="0 0 42 25">
+                    <path 
+                    d="M3 3L21 21L39 3"
+                    stroke="white"
+                    stroke-width="7"
+                    stroke-linecape="round"
+                    />
+                </svg>
+            </div>
+            <div class="ans">
+                <p>Response: "Stream Saviour calculates WQI based on inputs such as location and year. It analyzes parameters like pH, dissolved oxygen, turbidity, and pollutant concentrations to generate a comprehensive WQI score."</p>
+            </div>
+        </div><br><br>
+        <div class="faq">
+            <div class="ques">
+                <h4>Can Stream Saviour predict future WQI values?</h4>
+                <svg width="15" height="10" viewbox="0 0 42 25">
+                        <path 
+                        d="M3 3L21 21L39 3"
+                        stroke="white"
+                        stroke-width="7"
+                        stroke-linecape="round"
+                        />
+                    </svg>
+            </div>
+            <div class="ans">
+                <p> Response: "Yes, Stream Saviour has the unique capability to predict future WQI values based on historical data and trends. This feature allows users to anticipate changes in water quality over time."</p>
+            </div>
+        </div><br><br>
+        <div class="faq">
+            <div class="ques">
+                <h4>Is Stream Saviour easy to use?</h4>
+                <svg width="15" height="10" viewbox="0 0 42 25">
+                            <path 
+                            d="M3 3L21 21L39 3"
+                            stroke="white"
+                            stroke-width="7"
+                            stroke-linecape="round"
+                            />
+                        </svg>
+            </div>
+            <div class="ans">
+                <p>Response: "Yes, Stream Saviour is designed to be user-friendly. It provides a simple interface for inputting location and year and generates WQI results quickly and efficiently."</p>
+            </div>
+        </div><br><br>
+        <div class="faq">
+            <div class="ques">
+                <h4>Who can benefit from using Stream Saviour?</h4>
+                <svg width="15" height="10" viewbox="0 0 42 25">
+                                <path 
+                                d="M3 3L21 21L39 3"
+                                stroke="white"
+                                stroke-width="7"
+                                stroke-linecape="round"
+                                />
+                            </svg>
+            </div>
+            <div class="ans">
+                <p>Response: "Stream Saviour is beneficial for a wide range of users, including environmental scientists, policymakers, watershed managers, conservationists, and anyone interested in monitoring and improving water quality."</p>
+            </div>
+        </div><br><br>
+        <div class="faq">
+            <div class="ques">
+                <h4>Are there any prerequisites for using Stream Saviour?</h4>
+                <svg width="15" height="10" viewbox="0 0 42 25">
+                                    <path 
+                                    d="M3 3L21 21L39 3"
+                                    stroke="white"
+                                    stroke-width="7"
+                                    stroke-linecape="round"
+                                    />
+                                </svg>
+            </div>
+            <div class="ans">
+                <p> Response: "No prerequisites are required to use Stream Saviour. Users only need access to the internet and basic knowledge of the location and year they wish to analyze."</p>
+            </div>
+        </div><br><br>
+        <div class="faq">
+            <div class="ques">
+                <h4>Is Stream Saviour accessible on mobile devices?</h4>
+                <svg width="15" height="10" viewbox="0 0 42 25">
+                                        <path 
+                                        d="M3 3L21 21L39 3"
+                                        stroke="white"
+                                        stroke-width="7"
+                                        stroke-linecape="round"
+                                        />
+                                    </svg>
+            </div>
+            <div class="ans">
+                <p>Response: "Yes, Stream Saviour is accessible on most mobile devices with internet connectivity. Users can access the web interface through their mobile browsers for on-the-go water quality assessment."</p>
+            </div>
+        </div><br><br>
+        <div class="faq">
+            <div class="ques">
+                <h4>How accurate are the WQI results provided by Stream Saviour? </h4>
+                <svg width="15" height="10" viewbox="0 0 42 25">
+                <path 
+                                            d="M3 3L21 21L39 3"
+                                            stroke="white"
+                                            stroke-width="7"
+                                            stroke-linecape="round"
+                                            />
+                                        </svg>
+            </div>
+            <div class="ans">
+                <p>Response: "Stream Saviour aims to provide accurate WQI results based on scientific data and algorithms. However, the accuracy may vary depending on the quality of input data and the complexity of water quality dynamics."</p>
+            </div>
+        </div><br><br>
+        <div class="faq">
+            <div class="ques">
+                <h4>Can Stream Saviour be used for educational purposes?</h4>
+                <svg width="15" height="10" viewbox="0 0 42 25">
+                    <path 
+                    d="M3 3L21 21L39 3"
+                    stroke="white"
+                    stroke-width="7"
+                    stroke-linecape="round"
+                    />
+                </svg>
+            </div>
+            <div class="ans">
+                <p>Response: "Yes, Stream Saviour can be a valuable educational tool for teaching students about water quality assessment and environmental monitoring. It offers hands-on experience in calculating WQI and understanding its significance."</p>
+            </div>
+        </div><br><br>
+        <div class="faq">
+            <div class="ques">
+                <h4>Is Stream Saviour available for commercial use?</h4>
+                <svg width="15" height="10" viewbox="0 0 42 25">
+                    <path 
+                    d="M3 3L21 21L39 3"
+                    stroke="white"
+                    stroke-width="7"
+                    stroke-linecape="round"
+                    />
+                </svg>
+            </div>
+            <div class="ans">
+                <p>Response: "Yes, Stream Saviour can be used for commercial purposes, such as consulting services, environmental assessments, and water resource management. However, please refer to the terms of use for any licensing or usage restrictions."</p>
+            </div>
+        </div><br><br>
+        <h2>Contact</h2>
+        <p>For Further queries feel free to write us at streamsaviour@gmail.com </p>
+    </section>
+    <script>
+        const faqs = document.querySelectorAll(".faq");
+        faqs.forEach(faq => {
+            faq.addEventListener("click", () => {
+                faq.classList.toggle("active");
+                const ans = faq.querySelector(".ans");
+                if (faq.classList.contains("active")) {
+                    ans.style.maxHeight = ans.scrollHeight + "px";
+                } else {
+                    ans.style.maxHeight = null;
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
